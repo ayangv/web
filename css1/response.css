@@ -1,0 +1,616 @@
+﻿/* 跟版网精品织梦网站模板 www.genban.org */
+@charset "UTF-8";
+@media only screen and (max-width:1280px) {
+.wrapper {
+	width: 96%
+}
+.parallax {
+	background-attachment: scroll
+}
+.portfolio_list .ias-spinner a, .portfolio_list .ias-trigger a, .portfolio_list .ias-noneleft, .products .ias-spinner a, .products .ias-trigger a, .products .ias-noneleft {
+	margin: 8px
+}
+.new_main, .entry-type, .post_info {
+	padding: 12px
+}
+.single-product #container, .single-docs .container, .single-portfolio .container {
+	padding: 36px 12px
+}
+.product_list ul li, .portfolio_list ul li {
+	width: 50%
+}
+.mobile_header {
+	height: 60px;
+	background-color: #fff;
+	color: #333;
+	position: relative;
+	border-bottom: 1px #eee solid;
+	text-align: center
+}
+.mobile_header .logo {
+	display: inline-block;
+	border-right: 0;
+	margin: 0;
+	padding: 14px 0
+}
+.mobile_header .logo img {
+	height: 32px
+}
+.mobile_header .icon-user, .mobile_header .icon-menu {
+	position: absolute;
+	top: 16px;
+	text-align: center;
+	padding: 1px;
+	cursor: pointer
+}
+.mobile_header .icon-menu {
+	left: 12px
+}
+.mobile_header .icon-user {
+	right: 12px
+}
+#content-container {
+	position: relative;
+	z-index: 99;
+	background-color: #fff
+}
+.snapjs-left .mobile_menu, .snapjs-right .mobile_user {
+	display: block
+}
+.popup_bg {
+	background-color: rgba(0,0,0,0.2);
+	bottom: 0;
+	cursor: default;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	visibility: hidden;
+	z-index: 999
+}
+.snapjs-left .popup_bg, .snapjs-right .popup_bg {
+	visibility: visible;
+	opacity: 1
+}
+.mobile_user, .mobile_aside {
+	width: 260px;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	background-color: #222;
+	overflow-x: hidden;
+	overflow-y: auto;
+	z-index: 0;
+	display: none
+}
+.mobile_nav {
+	left: 0
+}
+.mobile_user {
+	right: 0
+}
+.mobile-menu {
+	margin-top: 60px
+}
+.admin-bar .mobile_aside .mobile-menu {
+	margin-top: 58px
+}
+.mobile-menu .menu>li {
+	line-height: 48px;
+	border-bottom: 1px #111 solid;
+	position: relative
+}
+.mobile-menu .menu>li>a {
+	height: 48px;
+	width: 100%;
+	display: block;
+	text-indent: 12px;
+	color: #bbb
+}
+.mobile-menu .menu>li.current-menu-parent>a, .mobile-menu .menu>li.current-menu-item>a {
+	background-color: #013686;
+	color: #fff
+}
+.mobile-menu .menu>li.current-menu-item .toggle-btn .icon-plus {
+	color: #bbb
+}
+.toggle-btn {
+	position: absolute;
+	height: 48px;
+	width: 48px;
+	color: #444;
+	text-align: center;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+	z-index: 100;
+	display: block
+}
+.toggle-btn .icon-plus {
+	display: block;
+	height: 48px;
+	width: 48px
+}
+.toggle-btn .active:before {
+	content: '\e827';
+	color: #999
+}
+.mobile-menu .sub-menu {
+	background-color: #121212
+}
+.mobile-menu .sub-menu>li>a {
+	text-indent: 18px;
+	color: #999;
+	display: block;
+	height: 48px
+}
+.mobile-menu .sub-menu>li {
+	position: relative;
+	border-bottom: 1px #000 solid
+}
+.mobile-menu>ul>li[class^="icon-"]:before, .mobile-menu>ul>li[class*="icon-"]:before {
+	position: absolute;
+	top: 12px;
+	left: 12px;
+	color: #999;
+	width: 14px
+}
+.mobile-menu ul.sub-menu>li.current-menu-parent:before, .mobile-menu ul.sub-menu>li.current-menu-item:before, .mobile-menu ul.sub-menu>li.current-menu-item:before {
+	position: absolute;
+	content: '';
+	top: 19px;
+	left: 20px;
+	width: 8px;
+	height: 8px;
+	border-radius: 100%;
+	background-color: #013686
+}
+.mobile-menu>ul>li[class^="icon-"]>a, .mobile-menu>ul>li[class*="icon-"]>a {
+	text-indent: 32px
+}
+.mobile-menu ul.sub-menu>li.current-menu-parent>a, .mobile-menu ul.sub-menu>li.current-menu-item>a, .mobile-menu ul.sub-menu>li.current-menu-item>a {
+	text-indent: 40px;
+	color: #013686
+}
+.login-reg {
+	padding: 60px 20px;
+	text-align: center
+}
+.login-reg p {
+	color: #fff;
+	font-size: 14px;
+	border-bottom: 1px #333 solid;
+	padding: 12px 0
+}
+.login-reg ul li a {
+	width: 100%;
+	display: block;
+	margin: 20px 0;
+	color: #fff;
+	background-color: #247acf;
+	padding: 8px;
+	cursor: pointer
+}
+.user_mobile {
+	margin-top: 58px
+}
+.user_mobile p {
+	padding: 20px;
+	color: #bbb
+}
+.user_mobile ul li a {
+	padding: 8px 20px 8px 36px;
+	border-bottom: 1px #111 solid;
+	position: relative;
+	display: block;
+	color: #999
+}
+.user_mobile ul li a:before {
+	position: absolute;
+	content: '';
+	width: 8px;
+	height: 8px;
+	border-radius: 100%;
+	top: 16px;
+	left: 16px;
+	background-color: #247acf
+}
+.user_mobile ul li a:hover, .user_mobile ul li.current_page a {
+	color: #fff;
+	background-color: #247acf
+}
+.user_mobile ul li a:hover:before, .user_mobile ul li.current_page a:before {
+	background-color: #fff
+}
+.mobile_contact {
+	margin-top: 36px;
+	position: absolute;
+	bottom: 0
+}
+.mobile_contact h3 {
+	color: #bbb;
+	padding: 12px 20px
+}
+.mobile_contact ul li {
+	padding: 4px 20px;
+	color: #999
+}
+.mobile_contact ul li a {
+	color: #999
+}
+.swiper-image {
+	display: block;
+	height: 420px
+}
+.design img {
+	width: 66.67%
+}
+.responsive_main .icon i {
+	margin: 0 3px
+}
+.home .container>section.support {
+	height: 360px;
+	padding: 60px
+}
+.link_list ul li {
+	width: 16.666%
+}
+.post_info {
+	width: 32%
+}
+.single-docs .entry-type, .single-product .entry-type, .single-portfolio .entry-type {
+	width: 66%
+}
+.pre-next {
+	margin: 12px -12px -12px;
+	padding: 4px 8px
+}
+.woocommerce-tabs ul.tabs {
+	margin: -12px -12px 0;
+	width: -moz-calc(100%+24px);
+	width: -webkit-calc(100%+24px);
+	width: calc(100%+24px);
+	height: auto
+}
+.woocommerce-tabs ul.tabs li a {
+	padding: 6px 20px
+}
+.woocommerce-tabs ul li.active a {
+	border-top-width: 2px
+}
+}
+@media only screen and (max-width:1024px) {
+.alipay, .weixinpay, .wechat, .line {
+	width: 96%
+}
+.swiper-image {
+	height: 360px
+}
+.custom_btn a {
+	width: -moz-calc(50% - 20px);
+	width: -webkit-calc(50% - 20px);
+	width: calc(50% - 20px);
+	margin: 0
+}
+.custom_btn a.custom {
+	margin-left: 10px
+}
+.design .design_con {
+	padding-right: 30px
+}
+.design_con a {
+	width: 100%
+}
+.responsive_list {
+	text-align: center
+}
+.responsive_list ul li {
+	margin-bottom: 30px
+}
+.custom_main i {
+	width: 80px;
+	height: 80px;
+	font-size: 32px;
+	line-height: 80px
+}
+.link_list ul li {
+	width: 25%
+}
+}
+@media only screen and (max-width:768px) {
+body.single-product, body.single-portfolio {
+	background-color: #fff
+}
+.entry-type, .post_info {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	float: none
+}
+.single-product header, .single-portfolio header {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-bottom: 1px #eee solid
+}
+.responsive_list ul li, .service_list ul li {
+	width: 50%
+}
+.new_list ul li, .post_info, .single-docs .entry-type, .single-product .entry-type, .single-portfolio .entry-type, .design img, .design .design_con {
+	width: 100%
+}
+.home .container>section {
+	padding: 72px 0
+}
+.swiper-image {
+	height: 220px
+}
+.home_title {
+	margin-bottom: 24px;
+	padding: 0 8px
+}
+.home_title h2 {
+	margin-bottom: 0
+}
+.crumbs_cat {
+	margin-bottom: 40px
+}
+.home_title ul li {
+	margin-bottom: 12px
+}
+.home_title ul li a {
+	padding: 4px 12px
+}
+.home_title ul, .home_title p {
+	margin-top: 16px
+}
+.home_title p {
+	font-size: 14px
+}
+.service_list ul {
+	margin-right: -12px
+}
+.service_main {
+	margin-right: 12px;
+	margin-bottom: 12px
+}
+.product_list .product_main, .por-main {
+	margin: 0 6px 12px
+}
+.custom_style {
+	text-align: center;
+	padding: 20px 0
+}
+.custom_style>.wrapper>section {
+	width: 100%
+}
+.custom_desc, .custom_btn {
+	line-height: 24px;
+	float: none;
+	overflow: hidden;
+	padding: 16px 0
+}
+.custom_btn {
+	text-align: center
+}
+.design .design_con {
+	width: 100%;
+	margin-bottom: 24px;
+	text-align: center
+}
+.design_con a {
+	display: none
+}
+.design_con span {
+	display: inline-block
+}
+.post_info {
+	margin-bottom: 24px
+}
+.product_result {
+	margin: 8px 12px
+}
+.line {
+	width: 92%
+}
+.line>span {
+	width: 48%
+}
+.line>span img {
+	padding: 8px
+}
+.col2-set>div {
+	width: 100%;
+	float: none
+}
+.wedocs-single-wrap .wedocs-single-content {
+	padding-left: 12px;
+	border-left: 1px #eee solid
+}
+}
+@media only screen and (max-width:480px) {
+#container, .container {
+	padding: 32px 0
+}
+.custom_btn a {
+	width: 50%
+}
+.login_reg {
+	width: 96%
+}
+.responsive_list ul li, .product_list ul li, .portfolio_list ul li, .post_info, .single-docs .entry-type, .single-product .entry-type, .single-portfolio .entry-type, .design img, .design .design_con {
+	width: 100%
+}
+.home .container>section {
+	padding: 48px 0
+}
+.swiper-image {
+	height: 180px
+}
+.service_list {
+	margin-top: 36px
+}
+.custom_list {
+	margin: 36px auto
+}
+.custom_list ul li {
+	margin-bottom: 12px
+}
+.custom_desc i:before {
+	font-size: 48px
+}
+.custom_desc span {
+	font-size: 18px
+}
+.custom_btn {
+	font-size: 0
+}
+.custom_btn a {
+	margin: 0;
+	width: -moz-calc(50% - 20px);
+	width: -webkit-calc(50% - 20px);
+	width: calc(50% - 20px)
+}
+.custom_btn a.more {
+	margin-right: 10px
+}
+.new_main {
+	margin-bottom: 24px
+}
+.custom_list ul li {
+	width: 33.33%
+}
+.link_list ul li {
+	width: 50%
+}
+.home .container>section.support {
+	height: 240px;
+	padding: 30px 0
+}
+.support h2 {
+	font-size: 24px;
+	margin: 12px 0
+}
+.support .home_button {
+	margin-top: 24px
+}
+.footer .popup {
+	width: 92%
+}
+.woocommerce-MyAccount-content {
+	padding: 0
+}
+.woocommerce .button {
+	width: 100%;
+	text-align: center
+}
+.woocommerce-message a.button {
+	width: auto
+}
+.product-thumbnail {
+	display: none
+}
+.shop_table .coupon {
+	float: none;
+	width: 100%
+}
+.shop_table.cart .coupon #coupon_code, .shop_table.cart .coupon .button, .shop_table.cart .actions input[type="submit"] {
+	width: 100%;
+	margin: 0 0 8px 0
+}
+.wc_points_rewards_apply_discount {
+	float: none;
+	width: 100%
+}
+#reviews .commentlist .children, #reviews .commentlist .comment_container {
+	padding-left: 42px
+}
+.comment_container img.avatar {
+	margin-left: -40px
+}
+.summary h1 {
+	margin: 4px 0
+}
+.summary div.price, .woocommerce-product-rating, .product_meta>span {
+	padding: 6px 0 4px
+}
+.woocommerce-variation-add-to-cart, form.cart, .summary .description, .summary div.price {
+	margin-bottom: 12px
+}
+.same_cat_posts ul li, form.cart .single_add_to_cart_button, form.cart .demo {
+	width: -moz-calc(100% / 2 - 5px);
+	width: -webkit-calc(100% / 2 - 5px);
+	width: calc(100% / 2 - 5px)
+}
+.same_cat_posts ul li:nth-child(2n+1), form.cart .single_add_to_cart_button, .post_btn.two .salongdemo {
+	margin-right: 10px
+}
+.same_cat_posts ul li {
+	margin-bottom: 12px
+}
+.same_cat_posts h3 {
+	margin-bottom: 4px
+}
+table td, table th {
+	padding: 8px
+}
+table.portable thead, table.portable .title {
+	white-space: normal
+}
+table.portable td {
+	padding: 6px;
+	display: block
+}
+#commentform .stars a {
+	width: -moz-calc(50% - 5px);
+	width: -webkit-calc(50% - 5px);
+	width: calc(50% - 5px);
+	margin-right: 0;
+	margin-bottom: 10px
+}
+#commentform .stars a:nth-child(2n+1) {
+	margin-right: 10px
+}
+form#commentform .form-submit, form#commentform input[type="submit"] {
+	width: 100%
+}
+.woocommerce .order_details li {
+	width: 50%;
+	padding: 0 12px;
+	margin-bottom: 20px
+}
+.woocommerce .order_details li:nth-child(2) {
+	border-right: 0
+}
+.crumbs-normal {
+	height: 120px
+}
+.crumbs-menu {
+	height: 180px
+}
+.crumbs-normal h2 {
+	font-size: 18px
+}
+.crumbs-menu h2 {
+	font-size: 24px
+}
+.woocommerce-MyAccount-navigation ul li {
+	line-height: 24px;
+	margin: 0 2px
+}
+.woocommerce-MyAccount-navigation a, #filters button {
+	min-width: 30px;
+	min-height: 26px;
+	padding: 2px 8px
+}
+.front_login {
+	width: 96%
+}
+.wedocs-shortcode-wrap ul.wedocs-docs-list li.wedocs-docs-single, .wedocs-shortcode-wrap ul.wedocs-docs-list ul.wedocs-doc-sections li {
+	width: 100%;
+	float: none
+}
+.crumbs_docs {
+	display: none
+}
+}
