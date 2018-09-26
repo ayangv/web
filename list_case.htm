@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+
+
+<link rel='stylesheet' id='wedocs-styles-css' href='/skin/css1/frontend.css' type='text/css' media='all'/>
+<link rel='stylesheet' id='main-css' href='/skin/css1/main.css' type='text/css' media=''/>
+<link rel='stylesheet' id='woocommerce-css' href='/skin/css1/woocommerce.css' type='text/css' media=''/>
+<link rel='stylesheet' id='response-css'  href='/skin/css1/response.css' type='text/css' media='' />
+<link rel='stylesheet' id='animate-css' href='/skin/css1/animate.css' type='text/css' media=''/>
+<script type='text/javascript' src='/skin/js1/jquery.js'></script>
+<script type='text/javascript' src='/skin/js1/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='/skin/js1/jquery.min.js'></script>
+<script type='text/javascript' src='/skin/js1/snap.js'></script>
+<script type='text/javascript' src='/skin/js1/swiper.jquery.min.js'></script>
+</head>
+<body class="list_body list{dede:type}[field:ID /]{/dede:type}">
+{dede:include filename="head.htm"/} 
+﻿
+
+<section class="container" style="padding: 37px 0 !important;">
+  <section class="crumbs_cat" style="padding: 0px 0 !important;">
+    <section class="home_title wow zoomIn"> 
+      <!--博客-->
+      <h2>作品展示</h2>
+      <span>Portfolio</span>
+      <p> 8年设计开发经验、顶尖建站团队为众多优秀的企业定制高端个性化的企业站点 </p>
+       <ul class=" wow bounceInUp">
+        <!--<li> <a href="/1381/a/zuopin"> 全部 </a> </li>-->
+        {dede:type typeid='7'}
+        <li class="cat-item"><a href="[field:typelink/]" >[field:typename/]</a> </li>
+        {/dede:type} 
+        {dede:type typeid='8'}
+        <li class="cat-item"><a href="[field:typelink/]" >[field:typename/]</a> </li>
+        {/dede:type} 
+        {dede:type typeid='9'}
+        <li class="cat-item"><a href="[field:typelink/]" >[field:typename/]</a> </li>
+        {/dede:type} 
+        
+      </ul>
+    </section>
+  </section>
+  <section class="product_list" style="padding: 0px 0 !important;">
+    <ul class="products">
+    {dede:list pagesize='12'}
+      <li class="ajaxpost wow bounceInUp animated">
+        <article class="product_main"> <a href="[field:arcurl/]" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"> </a>
+          <section class="product_img"><a href="[field:arcurl/]" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img src="[field:picname/]" style="display: block;"></a> </section>
+          <section class="product_info">
+            <h2 class="woocommerce-loop-product__title">[field:title/]</h2>
+            <section class="price_star"> </section>
+          </section>
+        </article>
+      </li>
+  {/dede:list}
+    </ul>
+    <!-- 分页 -->
+    
+    <nav class="navigation pagination" role="navigation">
+      <h2 class="screen-reader-text">文章导航</h2>
+      <div class="nav-links"> 
+          {dede:pagelist listitem="index,end,pre,next,pageno" listsize="5"/}
+    </div>
+    </nav>
+  </section>
+</section>
+
+
+
+
+
+<div class="blankbig"></div>
+<!-- 内容展示 end--> 
+{dede:include filename="footer.htm"/}
+</body>
+</html>

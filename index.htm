@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="author" content="order by dede58.com" />
+<!-- <link rel="stylesheet" type="text/css" href="/skin/css/pintuer.css"  />
+<link rel="stylesheet" type="text/css" href="/skin/css/owl.carousel.css" />
+<link rel="stylesheet" type="text/css" href="/skin/css/style.css"  />
+<script type="text/javascript" src="/skin/js/jquery.min.js" ></script>
+<script type="text/javascript" src="/skin/js/pintuer.js"></script>
+<script type="text/javascript" src="/skin/js/ntab.js"></script> -->
+
+
+
+<link rel='stylesheet' id='wedocs-styles-css' href='/skin/css1/frontend.css' type='text/css' media='all'/>
+<link rel='stylesheet' id='main-css' href='/skin/css1/main.css' type='text/css' media=''/>
+<link rel='stylesheet' id='woocommerce-css' href='/skin/css1/woocommerce.css' type='text/css' media=''/>
+<link rel='stylesheet' id='response-css'  href='/skin/css1/response.css' type='text/css' media='' />
+<link rel='stylesheet' id='animate-css' href='/skin/css1/animate.css' type='text/css' media=''/>
+<script type='text/javascript' src='/skin/js1/jquery.js'></script>
+<script type='text/javascript' src='/skin/js1/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='/skin/js1/jquery.min.js'></script>
+<script type='text/javascript' src='/skin/js1/snap.js'></script>
+<script type='text/javascript' src='/skin/js1/swiper.jquery.min.js'></script>
+
+
+
+</head>
+<body class="home blog">
+{dede:include filename="head.htm"/} 
+<section class="container"> 
+  <!-- 幻灯片 -->
+  
+  <section class="slide-main slide-home">
+    <div class="swiper-container swiper-home">
+      <div class="swiper-wrapper">
+      {dede:arclist row='3' orderby=pubdate type='image.' typeid='20'}
+        <article class="swiper-slide slide-single"> <a href="#line" class="swiper-image" ><img src="[field:litpic/]"  alt="[field:title/]"/> </a> </article>
+	  {/dede:arclist}
+ 	  </div>
+      <!-- 导航 -->
+      <div class="swiper-pagination swiper-home-pagination"></div>
+      <!-- 按钮 -->
+      <div class="swiper-button swiper-home-button-next swiper-button-next icon-angle-right"></div>
+      <div class="swiper-button swiper-home-button-prev swiper-button-prev icon-angle-left"></div>
+    </div>
+  </section>
+
+    
+     <section class="service"> 
+    <!--标题--> 
+    <section class="home_title wow zoomIn">
+    <div class="blankbig"></div>
+      <h2>服务内容</h2>
+      <span>Services</span> </section> 
+    <!--标题end-->
+    <section class="service_list wrapper">
+      <ul class="layout_ul">
+        
+        <li class="layout_li wow bounceInUp">
+          <article class="service_main"> <img src="/skin/picture/1-1g110110451611.jpg" alt="高端定制网站">
+            <h2>高端定制网站</h2>
+            <p> 企业高端定制网站设计，彰显品牌形象，创造可持续的品牌价值… </p>
+          </article>
+        </li>
+        
+        <li class="layout_li wow bounceInUp">
+          <article class="service_main"> <img src="/skin/picture/1-1g110110524553.jpg" alt="企业电子商务网站建设">
+            <h2>企业电子商务网站建设</h2>
+            <p> 深入洞悉趋势，利用设计的力量，重新定义品牌零售环境、互联网和消费者的关系… </p>
+          </article>
+        </li>
+        
+        <li class="layout_li wow bounceInUp">
+          <article class="service_main"> <img src="/skin/picture/1-1g110110545117.jpg" alt="房间预订网站建设">
+            <h2>房间预订网站建设</h2>
+            <p> 旅行已成为生活一部分，将旅行、美景、住宿结合在一起，重新定义客栈与游客之间的关系… </p>
+          </article>
+        </li>
+        
+        <li class="layout_li wow bounceInUp">
+          <article class="service_main"> <img src="/skin/picture/1-1g110110604104.jpg" alt="服务器租用与网站托管">
+            <h2>服务器租用与网站托管</h2>
+            <p> 我们不只提供高端网站设计，更加注重服务器运维和网站托管，为企业一路护航… </p>
+          </article>
+        </li>
+        
+      </ul>
+    </section>
+  </section>
+
+
+
+<section class="container" style="padding: 37px 0 !important;">
+  <section class="crumbs_cat" style="padding: 0px 0 !important;">
+    <section class="home_title wow zoomIn"> 
+      <!--博客-->
+      <h2>作品展示</h2>
+      <span>Portfolio</span>
+      <p> 8年设计开发经验、顶尖建站团队为众多优秀的企业定制高端个性化的企业站点 </p>
+      <ul class=" wow bounceInUp">
+        <!--<li> <a href="/1381/a/zuopin"> 全部 </a> </li>-->
+        {dede:type typeid='7'}
+        <li class="cat-item"><a href="[field:typelink/]" >[field:typename/]</a> </li>
+        {/dede:type} 
+        {dede:type typeid='8'}
+        <li class="cat-item"><a href="[field:typelink/]" >[field:typename/]</a> </li>
+        {/dede:type} 
+        {dede:type typeid='9'}
+        <li class="cat-item"><a href="[field:typelink/]" >[field:typename/]</a> </li>
+        {/dede:type} 
+        
+      </ul>
+    </section>
+  </section>
+  <section class="product_list" style="padding: 0px 0 !important;">
+    <ul class="products">
+   <!--  {dede:arclist typeid='7' row='8' titlelen='50' orderby='pubdate'}
+      <li class="ajaxpost wow bounceInUp animated">
+        <article class="product_main"> 
+          <section class="product_img"><img src="[field:picname/]" style="display: block;"></section>
+          <section class="product_info">
+            <h2 class="woocommerce-loop-product__title">[field:title/]</h2>
+            <section class="price_star"> </section>
+          </section>
+        </article>
+      </li>
+	{/dede:arclist}  -->
+	{dede:arclist typeid='7' row='8' titlelen='50' orderby='pubdate'}
+	<li class="ajaxpost wow bounceInUp">
+          <article class="product_main">
+            <section class="product_img"> <img src="[field:picname/]"> <a rel="nofollow" href="[field:arcurl/]" class="button product_type_variable add_to_cart_button" title="[field:title/]"><i
+             class="icon-cart"></i></a> </section>
+            <section class="product_info">
+              <h2 class="woocommerce-loop-product__title">[field:title/]</h2>
+            </section>
+          </article>
+        </li>
+        {/dede:arclist} 
+    </ul>
+    <!-- 分页 -->
+    
+   <!--  <nav class="navigation pagination" role="navigation">
+      <h2 class="screen-reader-text">文章导航</h2>
+      <div class="nav-links"> <span class='page-numbers current'>1</span><a href='list_2.html'>2</a>
+<a href='list_2.html'>下一页</a>
+ </div>
+    </nav> -->
+  </section>
+</section>
+
+
+
+
+
+
+
+
+    <!--个性定制--> 
+<!--  <section class="product_list">
+      <ul class="products layout_ul">
+      {dede:arclist row=12 orderby=pubdate type='image.' typeid='23'}
+        <li class="ajaxpost wow bounceInUp">
+          <article class="product_main">
+            <section class="product_img"> <img src="[field:litpic/]"> <a rel="nofollow" href="/1381/a/pro/17.html" class="button product_type_variable add_to_cart_button" title="[field:title/]"><i
+             class="icon-cart"></i></a> </section>
+            <section class="product_info">
+              <h2 class="woocommerce-loop-product__title">[field:title/]</h2>
+            </section>
+          </article>
+        </li>
+         {/dede:arclist} 
+
+      </ul>
+    </section> -->
+
+ <section class="product_list">
+   <section class="custom_style parallax" style="background-image: url(/skin/images/parallax_bg.jpg);">
+      <section class="wrapper">
+        <section class="custom_desc wow bounceInRight"><i class="icon-pro"></i><span>省去折腾主机，将网站托管在阿里云主机？</span></section>
+        <section class="custom_btn"> <a href="" class="more home_button wow bounceInRight" title="查看更多作品"> <span>查看更多产品</span> </a> <a href="#line" class="custom home_button wow bounceInRight" title="点击联系我们提交您的需求"> <span>定制优秀网站</span> </a> </section>
+      </section>
+    </section>
+  </section>
+
+   <section class="design">
+    <section class="wrapper">
+      <section class="design_con">
+        <h2 class="wow bounceInUp"><span>专注简约设计.</span><span>干净代码</span></h2>
+        <p class="wow bounceInUp"> 简约是用不过时的时髦，以塑造唯美的、高品位的风格为目的，摒弃一切无用的细节，保留设计最本真、最纯粹的部分，把设计简化到本质，简而不空。干净的代码，结构清晰，网站运行效率更高。 </p>
+        <a href="#line" class="home_button wow bounceInUp" title="点击联系我们提交您的需求"> <span>定制优秀网站</span> </a> </section>
+      <img class="wow bounceInRight" src="/skin/picture/design.png" alt="专注简约设计.干净代码"> </section>
+  </section>
+
+  <section class="responsive"> 
+    <!--标题-->
+    <section class="home_title wow zoomIn">
+      <h2>不同媒介，同样精彩</h2>
+      <span>Responsive</span> </section>
+    <!--标题end-->
+    <section class="responsive_list wrapper">
+      <ul class="layout_ul">
+        <li class="layout_li wow bounceInRight">
+          <article class="responsive_main">
+            <section class="icon"> <i class="icon-pc"></i> <i class="icon-notebook"></i> <i class="icon-ipad"></i> <i class="icon-iphone"></i> </section>
+            <section class="desc">
+              <p>触及视觉灵魂的设计趋势</p>
+              <p>精心布局的用户体验</p>
+              <p>一个网站响应所有终端</p>
+            </section>
+          </article>
+        </li>
+        <li class="layout_li wow bounceInRight">
+          <article class="responsive_main">
+            <section class="icon"> <i class="icon-opera"></i> <i class="icon-firefox"></i> <i class="icon-chrome"></i> <i class="icon-safari"></i> <i class="icon-ie"></i> </section>
+            <section class="desc">
+              <p>Html5 + CSS3 响应式布局</p>
+              <p>卓越的浏览器兼容性</p>
+              <p>因为高端，所以出众</p>
+            </section>
+          </article>
+        </li>
+        <li class="layout_li wow bounceInRight">
+          <article class="responsive_main">
+            <section class="icon"> <i class="icon-windows"></i> <i class="icon-android"></i> <i class="icon-apple"></i> </section>
+            <section class="desc">
+              <p>无障碍的跨平台应用</p>
+              <p>无须用户下载安装即可使用</p>
+              <p>云端管理，轻松维护</p>
+            </section>
+          </article>
+        </li>
+      </ul>
+    </section>
+    <button class="wow bounceInUp">功能远不止这些！</button>
+  </section>
+
+
+
+
+ <section class="new"> 
+    <!--标题-->
+    <section class="home_title wow zoomIn"> <h2>新闻动态</h2>
+
+      <span>news</span>
+      <ul class=" wow bounceInUp">
+       {dede:type typeid='10'}
+        <li class="current-cat"> <a href="[field:typelink/]"> [field:typename/] </a> </li>
+        {/dede:type}
+        {dede:type typeid='11'}
+        <li class="cat-item"><a href="[field:typelink/]">[field:typename/]</a> </li>
+         {/dede:type}
+        {dede:type typeid='12'}
+        <li class="cat-item"><a href="[field:typelink/]">[field:typename/]</a> </li>
+          {/dede:type}
+      </ul>
+    </section>
+    <!--标题end-->
+    <section class="new_list wrapper">
+      <ul class="layout_ul">
+      {dede:arclist row=4 orderby=pubdate  typeid='4' addfields='body' channelid='1'}
+        <li class="layout_li ajaxpost wow bounceInUp">
+          <article class="new_main">
+            <h3><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></h3>
+            <!-- 摘要 -->
+            <div class="excerpt">[field:body function='cn_substr(html2text(@me),110)'/]...</div>
+            <!-- 摘要end -->
+            <section class="info"> <span class="date">[field:pubdate function="MyDate('y-m-d',@me)"/]</span> <a href="[field:arcurl/]" title="[field:title/]"
+         class="right"> <i class="icon-angle-right"></i> </a> </section>
+          </article>
+        </li>
+         {/dede:arclist}
+      </ul>
+    </section>
+  {dede:type typeid='4'}  <a href="[field:typelink/]" class="home_button wow bounceInUp" title="查看更多"><span>查看更多</span></a> {/dede:type}
+    </section>
+
+
+
+<section class="custom"> 
+    <!--标题-->
+    <section class="home_title wow zoomIn">
+      <h2>个性定制</h2>
+      <span>custom</span>
+      <p> 灵活的个性化定制解决方案，满足不同行业、不同规模的企业 </p>
+    </section>
+    <!--标题end-->
+    <section class="custom_list wrapper">
+      <ul class="layout_ul">
+        <li class="layout_li wow bounceInUp">
+          <article class="custom_main"> <i class="icon-custom1"></i>
+            <h3>需求沟通</h3>
+            <span> Communication </span> </article>
+        </li>
+        <li class="layout_li wow bounceInUp">
+          <article class="custom_main"> <i class="icon-custom2"></i>
+            <h3>设计创意</h3>
+            <span> Design+Creative </span> </article>
+        </li>
+        <li class="layout_li wow bounceInUp">
+          <article class="custom_main"> <i class="icon-custom3"></i>
+            <h3>前端开发</h3>
+            <span> HTML5+CSS3 </span> </article>
+        </li>
+        <li class="layout_li wow bounceInUp">
+          <article class="custom_main"> <i class="icon-custom4"></i>
+            <h3>测试反馈</h3>
+            <span> Test+Feedback </span> </article>
+        </li>
+        <li class="layout_li wow bounceInUp">
+          <article class="custom_main"> <i class="icon-custom5"></i>
+            <h3>上线运营</h3>
+            <span> Online </span> </article>
+        </li>
+        <li class="layout_li wow bounceInUp">
+          <article class="custom_main"> <i class="icon-custom6"></i>
+            <h3>后期维护</h3>
+            <span> Maintenance </span> </article>
+        </li>
+      </ul>
+    </section>
+    <a href="#line" class="home_button wow bounceInUp" title="灵活的个性化定制解决方案，满足不同行业、不同规模的企业"><span><i
+         class="icon-custom"></i>我需要定制</span></a> 
+      </section>
+{dede:include filename="footer.htm"/} 
+
+
+
+
+
+
+
+
+
+<script type='text/javascript' src='/skin/js1/post-like.js'></script> 
+<script type='text/javascript' src='/skin/js1/frontend.js'></script> 
+<script type='text/javascript' src='/skin/js1/add-to-cart.min.js'></script> 
+<script type='text/javascript' src='/skin/js1/jquery.blockui.min.js'></script> 
+<script type='text/javascript' src='/skin/js1/js.cookie.min.js'></script> 
+<script type='text/javascript' src='/skin/js1/woocommerce.min.js'></script> 
+<script type='text/javascript' src='/skin/js1/cart-fragments.min.js'></script> 
+<script type='text/javascript' src='/skin/js1/wow.min.js'></script> 
+<script type='text/javascript' src='/skin/js1/jquery.lazyload.min.js'></script> 
+<script type='text/javascript' src='/skin/js1/custom.js'></script> 
+<script type='text/javascript' src='/skin/js1/wp-embed.min.js'></script> 
+</body>
+</html>

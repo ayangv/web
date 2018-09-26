@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<link rel='stylesheet' id='wedocs-styles-css'  href='/skin/css1/frontend.css' type='text/css' media='all' />
+<link rel='stylesheet' id='main-css'  href='/skin/css1/main.css' type='text/css' media='' />
+<link rel='stylesheet' id='woocommerce-css'  href='/skin/css1/woocommerce.css' type='text/css' media='' />
+<link rel='stylesheet' id='animate-css'  href='/skin/css1/animate.css' type='text/css' media='' />
+<script type='text/javascript' src='/skin/js1/jquery.js'></script>
+<script type='text/javascript' src='/skin/js1/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='/skin/js1/jquery.min.js'></script>
+<script type='text/javascript' src='/skin/js1/swiper.jquery.min.js'></script>
+<!-- FOR IE9 below --><!--[if lt IE 9]><script src="/skin/js/respond.js" ></script><![endif]-->
+
+</head>
+<body class="portfolio-template-default single single-portfolio">
+{dede:include filename="head.htm"/} 
+<section class="container">
+  <section class="post_info">
+    <h1>{dede:field.title/}</h1>
+    <ul>
+      <li>所属类别：{dede:field.source/}</li>
+      <li>作品作者：{dede:field.writer/}</li>
+      <li>发布时间：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}</li>
+      <li>已被围观：<script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}" type='text/javascript' language="javascript"></script> 次</li>
+    </ul>
+    <div class="excerpt">
+      <p>调用摘要 ...</p>
+    </div>
+    <!-- 相关作品 --> 
+    <!-- 相关文章 -->
+    <article class="same_cat_posts">
+      <h3>推荐作品</h3>
+      <ul>
+        
+      </ul>
+    </article>
+    <!-- 相关文章end --> 
+    <!-- 上下篇 -->
+  <!--   <div class="pre-next"> 
+    {dede:prenext get='pre'/}
+    <a href='{dede:type row=1}[field:typelink /]{/dede:type}' title='{dede:field.title/}' class="title left"><i class="icon-angle-left"></i></a>  
+    {dede:prenext get='next'/} --> 
+
+    <div class="prenext text-center"> 
+        {dede:prenext get='pre'/} <br />
+        <!-- <a href="{dede:type row=1}[field:typelink /]{/dede:type}"  class="list" title="返回">返回列表</a>  -->
+        {dede:prenext get='next'/} 
+        </div>
+  
+    </div>
+  </section>
+  <!-- 获取文章 -->
+  <article class="entry-type">
+    <div class="content-post"> 
+    <p>
+  {dede:field.body/}
+  </div>
+    <!-- 文章end --> 
+    <!-- 获取文章end --> 
+  </article>
+</section>
+
+<div class="blankbig"></div>
+
+<!-- 内容展示 end--> 
+{dede:include filename="footer.htm"/}
+<script type='text/javascript' src='/skin/js1/add-to-cart.min.js'></script> 
+<script type='text/javascript' src='/skin/js1/jquery.blockui.min.js'></script> 
+<script type='text/javascript' src='/skin/js1/js.cookie.min.js'></script> 
+<script type='text/javascript' src='/skin/js1/woocommerce.min.js'></script> 
+<script type='text/javascript' src='/skin/js1/cart-fragments.min.js'></script> 
+<script type='text/javascript' src='/skin/js1/wow.min.js'></script> 
+<script type='text/javascript' src='/skin/js1/jquery.lazyload.min.js'></script> 
+<script type='text/javascript' src='/skin/js1/custom.js'></script> 
+<script type='text/javascript' src='/skin/js1/wp-embed.min.js'></script> 
+</body>
+</html>
